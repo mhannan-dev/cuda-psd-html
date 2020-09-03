@@ -12,13 +12,13 @@ html{
 body {
     font-family: 'Titillium Web', sans-serif;
     text-rendering: optimizeLegibility;
-    line-height: 1.3rem;
+   
 }
 /* Heading */
 h1 {
     font-size: 4.2rem;
     color: #fff;
-    line-height: 4rem;
+    
 }
 /****************/
 /* Re Usable component */
@@ -30,13 +30,7 @@ h1 {
 section{
     padding: 8rem 0rem;
 }
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-    height: 0;
-    visibility: hidden;
-}
+
 h2{
     font-size: 4rem;
     letter-spacing: .3rem;
@@ -63,6 +57,14 @@ h3{
     margin-bottom: 3.2rem;
     font-weight: 600;
     color: #fff;
+}
+
+h4{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+    color: #60584a;
+
 }
 
 .little-description {
@@ -155,7 +157,23 @@ header{
     background: rgba(100, 58, 121, 1); 
     border-radius: 0.5px;
 }
+/* Sticky Navigation */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #6D477C;
+    padding: 1rem 0;
 
+}
+.sticky .logo{
+    margin-top: 0;
+}
+
+.sticky .main-nav{
+    margin-top: 0;
+}
 .hero-text-box {
     position: absolute;
     top: 50%;
@@ -198,11 +216,11 @@ header{
     background-size: cover;
     background-attachment: fixed;
 }
-.team-section h2,.team-section p {
+.skill-section h2,.team-section h2,.team-section p {
     color: #3c4761;
 }
 
-.team-section h2::after{
+.skill-section h2::after,.team-section h2::after{
    background: #c8d9e5;
 }
 .team-member {
@@ -223,6 +241,7 @@ header{
 .team-section .box p{
     color: #5d677b;
     margin-top: 3.5rem;
+    text-align: center;
 }
 .social-link {
     margin-top: 4.5rem;
@@ -252,11 +271,218 @@ header{
     transform: rotate(360deg) !important;
 
 }
-/* Contact section */
-.section-contact {
-    background: linear-gradient(rgba(60, 84, 153, .9),rgba(60, 84, 153, .9)), url(img/map.jpg);
+
+/* Skills section  */
+.skill-section{
+    background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(255, 255, 255, .3)), url(img/skills.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
-.section-contact h2::after{
-    background: #0c2260;
-    margin-top: 23px;
+.skill-section h2,.skill-section .little-description{
+    color: #626a7d;
+
+}
+
+.box h3 {
+    color: #3c4761;
+    margin-top: 3rem;
+
+}
+
+svg.radial-progress text {
+    fill:#3c4761;
+    font-size: 1.5rem;
+
+}
+
+svg.radial-progress circle {
+    stroke-width: 5;
+}
+svg.web-design circle {
+    stroke: #30bae7;
+}
+svg.html-css circle {
+    stroke: #d74680;
+}
+svg.graphic-design circle {
+    stroke: #15c7a8;
+}
+
+svg.ui-ux circle {
+    stroke: #eb7d4b;
+}
+/* Skills section end  */
+
+/* Portfolio  */
+.portfolio-section {
+    
+    background: linear-gradient(rgba(255, 221, 153, .7),rgba(255, 221, 153, .7)), url(img/pfolio-bg.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+.portfolio-section h2{
+color: #393939;
+margin-bottom: 20px;
+}
+.portfolio-section h2::after{
+    background: #e5c37f; 
+ }
+
+.portfolio-section .little-description{
+    color: #60584a;
+    text-align: center;
+}
+
+.portfolio-filter{
+    margin: 4.5rem 0;
+}
+.portfolio-filter button{
+    background: #e5c37f;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border:0;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    margin: 0 .5rem;
+    color: #3c4761;
+    transition: .5s;
+}
+.portfolio-filter button:hover{
+    cursor: pointer;
+    box-shadow: inset 0.3rem 0.5rem rgba(57, 57, 57, .5);
+}
+.portfolio-image {
+    width: 100%;
+    height: 30rem;
+}
+
+.portfolio-section .col:nth-child(3){
+    margin-left: 0;
+}
+.portfolio-section .btn-load-more {
+    background: #17c2a4;
+    border: 1px solid #14a58c;
+    text-decoration: none;
+}
+/* Portfolio  end */
+/* Testimonial  */
+.testimonial {
+    background: linear-gradient(rgba(238, 54, 128, .8),rgba(238, 54, 128, .8)), url(img/testimonial.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.testimonial .little-description{
+    text-align: center; 
+    color: #fff;
+}
+.testimonial h2::after{
+    background: #9c2e5a; 
+ }
+
+.testimonial .col:nth-child(3){
+    margin-left: 0;
+}
+
+.testimonial .col:nth-child(1),
+.testimonial .col:nth-child(2){
+    margin-top: 4rem;
+}
+.testimonial .col:nth-child(3),
+.testimonial .col:nth-child(4){
+    margin-top: 8rem;
+}
+.client-photo{
+    width: 10rem;
+    float: left;
+}
+
+.client-review {
+    width: 30rem;
+    float: left;
+}
+
+.client-review p{
+    font-size: 2.1rem; 
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.client-photo img{
+    height: 8rem;
+    width: auto;
+    border-radius: 50%;
+    
+}
+.client-review h3{
+    font-size: 2.4rem;
+    color:#fff;
+    margin-bottom: 2rem;
+}
+
+.client-review span{
+    color:gold;
+    font-size: 1.8rem;
+    
+}
+
+/* Contact section */
+.contact-section {
+    background: linear-gradient(rgba(60, 84, 153, .8),rgba(60, 84, 153, .8)), url(img/map.jpg   );
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+
+}
+.contact-section .little-description{
+    width: 70%;
+    margin-left: 15%;
+}
+.contact-section h2::after{
+    background: #273a71; 
+ }
+ .contact-section form{
+     margin-top: 5rem;
+     width: 70%;
+     margin-left: 15%;
+     
+ }
+ .contact-section input[type='text'],
+ .contact-section input[type='email'],
+ .contact-section textarea{
+    background: #273a71;
+    border: .1rem solid #3c5499;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    margin: .5rem 0;
+
+ }
+ .contact-section form ::placeholder{
+     color: #fff;
+     opacity: 1;
+ }
+
+ .contact-section .btn-submit {
+     background: #30bae7;
+     border-bottom: .3rem solid #299ec5;
+ }
+
+ .contact-section .btn-submit:hover {
+    cursor: pointer;
 }
