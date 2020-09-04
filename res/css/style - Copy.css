@@ -14,14 +14,10 @@ body {
     text-rendering: optimizeLegibility;
    
 }
-ul li{
-    list-style-type: none;
-}
 /* Heading */
 h1 {
     font-size: 4.2rem;
     color: #fff;
-    
 }
 /****************/
 /* Re Usable component */
@@ -103,7 +99,7 @@ h4{
 }
 
 /* Header  */
-header {
+header{
     background: linear-gradient(rgba(135, 80, 156, .7),rgba(135,80,156,.7)), url(img/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -112,23 +108,34 @@ header {
     height: 85vh;
     position:relative;
     text-decoration: none;
-}
-.logo{
-    height: 3.5rem;
-    width: auto;
-    float: left;
-    margin-top: 3.5rem;
-}
-.main-nav{
-    float: right;
-    margin-top: 4rem;
-}
-.main-nav li {
-    display: inline-block;
-    margin-left: 30px;
+    text-transform: uppercase;
 }
 
-.main-nav li a:link,.main-nav li a:visited {
+.logo{
+    float: left;
+    margin-top: 3.5rem;
+    height: 3.5rem;
+    width: auto;
+}
+
+.main-nav {
+    float: right;
+}
+.main-nav {
+    margin-top: 3.5rem;
+}
+.main-nav li{
+    list-style-type: none;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 1rem;
+}
+
+.main-nav li:first-child{
+    margin-left: 0px;
+}
+
+.main-nav li a:link, ul.main-nav li a:visited {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -138,30 +145,17 @@ header {
     display: inline-block;
     font-size: 1.6rem;
     transition: .3s;
-   
 }
-.main-nav li:first-child{
-    margin-left: 0;
+
+.main-nav li:hover a:link,.main-nav li:hover a:visited{
+    background: rgba(100, 58, 121, 1); 
 }
+
+
 .active {
     background: rgba(100, 58, 121, 1); 
     border-radius: 0.5px;
 }
-
-.hero-text-box {
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.btn-hero:link,.btn-hero:visited {
-    background: #eb7d4b;
-    border-color: #c86a40;
-}
-
-
 /* Sticky Navigation */
 .sticky {
     position: fixed;
@@ -170,7 +164,6 @@ header {
     width: 100%;
     background: #6D477C;
     padding: 1rem 0;
-    z-index: 9999;
 
 }
 .sticky .logo{
@@ -179,6 +172,14 @@ header {
 
 .sticky .main-nav{
     margin-top: 0;
+}
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-transform: capitalize;
 }
 
 .btn-hero:link,.btn-hero:visited {
@@ -359,8 +360,8 @@ margin-bottom: 20px;
     box-shadow: inset 0.3rem 0.5rem rgba(57, 57, 57, .5);
 }
 .portfolio-image {
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: 30rem;
 }
 
 .portfolio-section .col:nth-child(3){
