@@ -36,6 +36,26 @@
           <li><a href="#testimonial">testimonial</a></li>
           <li><a href="#contact">contact</a></li>
         </ul>
+        <!-- mobile-menu -->
+        <div class="mobile-menu">
+          <span onclick="OpenNav()">&#9776</span>
+          <div class="overlay" id="myNav">
+          <a onclick="CloseNav()" href="javascript:void(0)" class="closebtn">&times;</a>
+          <div class="overlay-content">
+            <a onclick="CloseNav()" href="#header">home</a>
+            <a onclick="CloseNav()" href="#service">service</a>
+            <a onclick="CloseNav()" href="#team">team</a>
+            <a onclick="CloseNav()" href="#skill">skill</a>
+            <a onclick="CloseNav()" href="#work">portfolio</a>
+            <a onclick="CloseNav()" href="#testimonial">testimonial</a>
+            <a onclick="CloseNav()" href="#contact">contact</a>
+          </div>
+
+        </div>
+
+
+        </div>
+        <!-- mobile-menu -->
       </div>
     </nav>
     <div class="row">
@@ -340,7 +360,7 @@
               <textarea name="message" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
           </div>
           <div class="row">
-            <input class="btn btn-submit" value="Send Message">
+            <button class="btn btn-submit">Send Message</button>
           </div>
 
         </form>
@@ -358,7 +378,7 @@
     integrity="sha512-0mXreXYrXoy9laHoypsAOjuSCqh57vY+kIdE46k8Hw0yRY1EhJyHWUEAqfHOTrPkBpsbO39/ZPw5HITv8mLVOA=="
     crossorigin="anonymous"></script>
   <script src="vendors/js/jquery.waypoints.min.js"></script>
-    <script src="vendors/js/animated-circle.js"></script>
+  <script src="vendors/js/animated-circle.js"></script>
   <script src="vendors/js/mixitup.min.js"></script>
   <!-- Vendors -->
   <!-- Res -->
