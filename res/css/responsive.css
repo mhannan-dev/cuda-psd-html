@@ -136,3 +136,19 @@
         font-size: 45%;
     }
 }
+@media only screen and (max-width: 414px) {
+    header {
+        height: 45vh;
+    }
+    html {
+        font-size: 50%;
+    }
+}
+@media only screen and (max-width: 200px) {
+    header {
+        height: 40vh;
+    }
+    html {
+        font-size: 40%;
+    }
+}
